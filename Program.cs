@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using MyWebApp.Entities;
+
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<DekDueShopContext>(opt =>
+    opt.UseSqlServer(configuration.GetConnectionString("ConnectionSQLServer"))
+);
 
 var app = builder.Build();
 
