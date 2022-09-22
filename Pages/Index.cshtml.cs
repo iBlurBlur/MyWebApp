@@ -5,16 +5,14 @@ namespace MyWebApp.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
+        public string Message { get; set; } = "Hello cat";
 
         public void OnGet()
         {
+            Message = "Hello dog";
 
+            // Dictionary
+            ViewData["Username"] = "Tanakorn";
         }
     }
 }

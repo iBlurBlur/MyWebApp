@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using MyWebApp.Entities;
+using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -32,3 +35,4 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+

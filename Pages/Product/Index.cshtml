@@ -1,0 +1,12 @@
+﻿@page
+@model MyWebApp.Pages.Product.IndexModel
+
+@if(Model.Products != null){
+    @foreach (var item in Model.Products)
+    {
+        <p>@item.Name</p>
+    }
+}
+
+
+

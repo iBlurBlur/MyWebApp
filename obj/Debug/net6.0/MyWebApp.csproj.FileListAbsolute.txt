@@ -59,3 +59,5 @@ C:\Users\2521112595\Downloads\MyWebApp\obj\Debug\net6.0\refint\MyWebApp.dll
 C:\Users\2521112595\Downloads\MyWebApp\obj\Debug\net6.0\MyWebApp.pdb
 C:\Users\2521112595\Downloads\MyWebApp\obj\Debug\net6.0\MyWebApp.genruntimeconfig.cache
 C:\Users\2521112595\Downloads\MyWebApp\obj\Debug\net6.0\ref\MyWebApp.dll
+C:\Users\2521112595\Downloads\MyWebApp\bin\Debug\net6.0\Mapster.dll
+C:\Users\2521112595\Downloads\MyWebApp\bin\Debug\net6.0\Mapster.Core.dll
