@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using MyWebApp.Entities;
+using MyWebApp.Services;
+using Refit;
 using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
@@ -14,6 +16,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<DekDueShopContext>(opt =>
     opt.UseSqlServer(configuration.GetConnectionString("ConnectionSQLServer"))
 );
+
+builder.Services
+    .AddRefitClient<IUserAPI>()
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/"));
 
 var app = builder.Build();
 

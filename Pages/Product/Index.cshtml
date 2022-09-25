@@ -1,11 +1,20 @@
-﻿@page
+﻿@page "{id?}"
+@using MyWebApp.Services
 @model MyWebApp.Pages.Product.IndexModel
+
+@{
+    var user = ViewData["Users"] as User;
+}
 
 @if(Model.Products != null){
     @foreach (var item in Model.Products)
     {
         <p>@item.Name</p>
     }
+}
+
+@if(user != null){
+    <p>@user.Title</p>
 }
 
 

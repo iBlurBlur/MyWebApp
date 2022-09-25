@@ -61,3 +61,5 @@ C:\Users\2521112595\Downloads\MyWebApp\obj\Debug\net6.0\MyWebApp.genruntimeconfi
 C:\Users\2521112595\Downloads\MyWebApp\obj\Debug\net6.0\ref\MyWebApp.dll
 C:\Users\2521112595\Downloads\MyWebApp\bin\Debug\net6.0\Mapster.dll
 C:\Users\2521112595\Downloads\MyWebApp\bin\Debug\net6.0\Mapster.Core.dll
+C:\Users\2521112595\Downloads\MyWebApp\bin\Debug\net6.0\Refit.dll
+C:\Users\2521112595\Downloads\MyWebApp\bin\Debug\net6.0\Refit.HttpClientFactory.dll
