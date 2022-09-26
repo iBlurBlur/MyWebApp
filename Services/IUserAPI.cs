@@ -16,4 +16,3 @@ public partial class User
     public bool Completed { get; set; }
 }
 
-
