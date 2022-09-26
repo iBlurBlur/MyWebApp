@@ -21,17 +21,16 @@ namespace MyWebApp.Pages.Product
             this.userAPI = userAPI;
         }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(int? id)
         {
+            if(id != null)
+            {
+                ViewData["Users"] = await userAPI.GetUser(id ?? 0);
+                return;
+            }
             Products = await dekDueShopContext.Products.OrderByDescending(order => order.ProductId)
                 .ProjectToType<ProductViewModel>()
                 .ToListAsync();
-        }
-
-        //products/123 => user/123
-        public async Task OnGetIDAsync(int id)
-        {
-           ViewData["Users"] = await userAPI.GetUser(id);
         }
     }
 }
